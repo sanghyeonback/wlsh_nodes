@@ -441,7 +441,7 @@ class WLSH_Prompt_Weight:
         return(new_string,)
 
 class WLSH_SDXL_Resolutions:
-    resolution = ["1280x1280","1216x1344","1152x1408","1088x1472"]
+    resolution = ["1280x1280","1216x1344","1152x1408","1088x1472","1024x1536","960x1600","896x1664"]
     direction = ["vertical","horizontal"]    
     
     def __init__(self):
