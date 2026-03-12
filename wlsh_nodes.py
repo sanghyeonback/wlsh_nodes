@@ -441,8 +441,8 @@ class WLSH_Prompt_Weight:
         return(new_string,)
 
 class WLSH_SDXL_Resolutions:
-    resolution = ["1024x1024|1:1","1152x896|9:7","1216x832|19:13","1344x768|7:4","1536x640|12:5"]
-    direction = ["landscape","portrait"]    
+    resolution = ["1280x1280","1216x1344","1152x1408","1088x1472"]
+    direction = ["vertical","horizontal"]    
     
     def __init__(self):
         pass
@@ -467,7 +467,7 @@ class WLSH_SDXL_Resolutions:
         width,height = pixels.split('x')
         width = int(width)
         height = int(height)
-        if(direction == "portrait"):
+        if(direction == "horizontal"):
             width,height = height,width
         return(width,height)
 
